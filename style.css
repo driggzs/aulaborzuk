@@ -1,48 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Página JL</title>
-    <style>
-        /* Estilo para a seta fixa à esquerda */
-        .seta-esquerda {
-            position: fixed;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        .seta-esquerda a {
-            text-decoration: none;
-        }
-        
-        .seta-esquerda img {
-            width: 50px;
-        }
-        
-        /* Estilo para o conteúdo principal */
-        .conteudo-principal {
-            margin-left: 50px;
-        }
-        
-        .conteudo-principal img {
-            width: 150px;
-        }
-    </style>
-</head>
-<body>
-    <!-- Seta fixa à esquerda -->
-    <div class="seta-esquerda">
-        <a href="pagina2.html">
-            <img src="foto.png.jpg" alt="Seta">
-        </a>
-    </div>
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Conteúdo principal -->
-    <div class="conteudo-principal">
-        <h1>João Lucas</h1>
-        <img src="seta2.png" alt="seta">
-        <p>Aula de HTML e CSS</p>
-        <p>Aula Burzuk</p>
-    </div>
-</body>
-</html>
+/* Seta fixa à esquerda */
+.seta-flutuante {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.seta-flutuante a {
+    text-decoration: none;
+}
+
+/* Tamanhos específicos para cada seta */
+.seta-flutuante img.seta-pequena {
+    width: 50px;
+}
+
+.seta-flutuante img.seta-grande {
+    width: 150px;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    margin-left: 50px;
+}
+
+/* Imagem do perfil */
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Para garantir que a imagem não fique distorcida */
+}
